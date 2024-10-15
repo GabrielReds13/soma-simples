@@ -4,9 +4,6 @@ const resultSum = document.getElementById("result-sum");
 const inputNum1 = document.getElementById("input-num1");
 const inputNum2 = document.getElementById("input-num2");
 
-const btnSubmit1 = document.getElementById("submit-1");
-const btnSubmit2 = document.getElementById("submit-2");
-
 // code
 async function sum(num1, num2) {
     try {
