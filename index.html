@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Styles -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex flex-col w-screen h-screen items-center justify-center p-4 min-w-[340px]">
+        <!-- Title -->
+        <h1 class="text-6xl text-center leading-10 font-bold">SOMA <br> <span class="text-4xl bg-blue-500 text-white px-4">SIMPLES</span></h1>
+
+        <!-- Content -->
+        <div class="flex flex-col gap-4 w-full max-w-[500px] h-[80%] justify-center">
+
+            <!-- Result -->
+            <p class="text-xl" id="result-sum">Lorem ipsum.</p>
+    
+            <!-- Form -->
+            <div class="flex flex-col w-full gap-2 p-6 border rounded-xl shadow-sm">
+                <!-- Inputs -->
+                <input 
+                    type="text" 
+                    placeholder="Digite um número" 
+                    id="input-num1"
+                    class="
+                        w-full 
+                        pl-6 pr-4 py-3 
+                        rounded-full 
+                        border border-gray-300 
+                        text-gray-700 text-lg
+                        focus:outline-none 
+                        focus:ring-2 
+                        focus:ring-blue-500 
+                        focus:border-blue-500 
+                    "
+                >
+                
+                <input 
+                    type="text" 
+                    placeholder="Digite outro número" 
+                    id="input-num2"
+                    class="
+                        w-full 
+                        pl-6 pr-4 py-3 
+                        rounded-full 
+                        border border-gray-300 
+                        text-gray-700 text-lg
+                        focus:outline-none 
+                        focus:ring-2 
+                        focus:ring-blue-500 
+                        focus:border-blue-500 
+                    "
+                >
+    
+                <!-- Buttons -->
+                 <!-- Sum -->
+                <button
+                    id="submit-1"
+                    class="
+                        w-full 
+                        bg-blue-500
+                        pl-6 pr-4 py-3 
+                        rounded-full
+                        text-white text-lg 
+                        transition duration-300 ease-in-out
+                        hover:bg-blue-600
+                        focus:bg-blue-400 
+                    "
+                    onclick="sumNums()"
+                > Somar </button>
+    
+                <!-- Clear -->
+                <button
+                    id="submit-2"
+                    class="
+                        w-full 
+                        bg-pink-700
+                        pl-6 pr-4 py-3 
+                        rounded-full
+                        text-white text-lg 
+                        transition duration-300 ease-in-out
+                        hover:bg-pink-800
+                        focus:bg-pink-600 
+                    "
+                > Limpar </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script> 
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
